@@ -28,14 +28,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: pnpm/action-setup@v2
-        with:
-          version: latest
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
-      # - uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
+      - uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
