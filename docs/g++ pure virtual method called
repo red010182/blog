@@ -1,0 +1,33 @@
+# g++ pure virtual method called
+
+This code build successfully but crash at runtime if you compile with gcc/g++ with whatever flags which including `-march=armxxx`, it will probably crash at runtime at a very high probability. 
+
+```
+#include <iostream>
+#include <string>
+#include <thread>
+#include <future>
+#include <arm_neon.h>
+
+using namespace std;
+
+void print(string s) { cout << s << endl; }
+
+int main() {
+	float32x4_t x;
+	auto _ = std::async(std::launch::async, print, "async works");
+    thread m(print, "thread works");
+	cout << "hi" << endl;
+	m.join();
+	return 0;
+}
+```
+
+
+
+The solution on my raspberry pi is do not use `-march`, instead use`-mfloat-abi=hard -mfpu=neon`.
+
+
+References:
+* http://stackoverflow.com/questions/31512945/cross-compiling-for-arm-float32x4-t-cannot-be-resolved
+* http://stackoverflow.com/questions/33764511/compile-with-neon-using-arm-linux-gnueabihf

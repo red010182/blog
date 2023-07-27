@@ -3,23 +3,22 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Alston Cao's Blog"
+  text: "Powered by VitePress"
+  tagline: 隨手寫寫
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Articles
+      link: /2020如何選擇Web後端框架？
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Resume
+      link: /resume
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+# features:
+#   - title: Feature A
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature B
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature C
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
