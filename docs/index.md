@@ -12,7 +12,7 @@ hero:
       link: /2020如何選擇Web後端框架？
     - theme: alt
       text: Resume
-      link: /resume
+      link: https://oh12g0kas6.feishu.cn/docs/doccnwqYMJipDQU3jIevnRtKXdh
 
 # features:
 #   - title: Feature A
